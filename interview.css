@@ -1,0 +1,64 @@
+body{
+    background-color:rgb(205, 243, 245);
+}
+
+.headline{
+    font-size:35px;font-weight:bold;
+    margin-bottom:10px;
+    text-align:center;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    background-color: aliceblue ;
+}
+.SideMenu{
+    flex: none;width: 70px;margin-left: 10px;
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+}
+.frame{
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.entity{
+    border: 1px solid black;
+    flex: none;width: 30%;margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.question{
+    background-color: beige;
+    padding: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center; /* 將問題內容垂直置中 */
+    justify-content: center; /* 將問題內容水平居中 */
+    text-align: center; /* 將內容文字水平居中 */  
+}
+.ans{
+    background-color: #ffcccc;
+    text-align: center;
+    padding:10px;
+    text-align: left;
+    flex:1;
+}
+.keyword{
+    color:red;
+    font-weight: bold;
+}
+.emoji{
+    font-size:20px;
+}
+@media (max-width:1250px){
+    .entity{
+        width: 45%;
+    }
+}
+@media (max-width:500px){
+    .entity{
+        width: 90%;
+    }
+}
