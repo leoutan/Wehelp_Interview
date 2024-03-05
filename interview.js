@@ -10,6 +10,6 @@ function showimg() {
     // 開啟新的子視窗，顯示特定文字
     var popupWindow = window.open("", "_blank", "width=400,height=300");
     popupWindow.document.write(
-        "<img src=\"test.jpg\" width=\"200px\" height=auto>"
+        "<title>我的照片</title><img src=\"me&myson.jpg\" width=\"200px\" height=auto>"
     );
 }
