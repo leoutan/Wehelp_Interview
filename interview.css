@@ -32,11 +32,15 @@ body{
 .question{
     background-color: beige;
     padding: 10px;
-    height: 40px;
+    /* height: 40px; */
     display: flex;
-    align-items: center; /* 將問題內容垂直置中 */
-    justify-content: center; /* 將問題內容水平居中 */
-    text-align: center; /* 將內容文字水平居中 */  
+    flex-direction: column;
+    /* 將問題內容垂直置中 */
+    align-items: center; 
+    /* 將問題內容水平居中 */
+    justify-content: center; 
+    /* 將內容文字水平居中 */  
+    text-align: center; 
 }
 .ans{
     background-color: #ffcccc;

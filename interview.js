@@ -13,3 +13,24 @@ function showimg() {
         "<title>我的照片</title><img src=\"me&myson.jpg\" width=\"200px\" height=auto>"
     );
 }
+
+function adjustQuestionHeight(){
+    var questions = document.querySelectorAll(".question");
+
+    var maxHeight = 0;
+
+    questions.forEach(function(question){
+        question.style.height="auto";
+        var height = question.offsetHeight;
+        console.log(height);
+        maxHeight=Math.max(maxHeight, height);
+    });
+
+    questions.forEach(function(question){
+        question.style.height=maxHeight+"px";
+    })
+}
+document.addEventListener("DOMContentLoaded", function(){
+    adjustQuestionHeight();
+    window.addEventListener("resize", adjustQuestionHeight);
+});
